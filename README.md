@@ -25,12 +25,6 @@ Kurulum, hesap, yükleme veya bulut servisi gerekmez.
 - Liste temizleme ve dosya bazında durum/Hata mesajı.
 - Açık/koyu tema; tercih `localStorage` yerine yalnızca sayfa oturumunda tutulur.
 
-## Ekran görüntüsü
-
-Bu depoda ekran görüntüsü **yoktur**; uydurma görsel eklenmemiştir. Kendi görüntünüzü
-üretmek için aracı bir tarayıcıda açın ve 1440 px ile 390 px genişlikte ekran görüntüsü
-alın. Depoya eklerken hangi tarayıcı/sürüm ve görünüm genişliğiyle alındığını yazın.
-
 ## Gereksinimler
 
 - Güncel Chrome, Edge, Firefox veya Safari.
@@ -93,13 +87,6 @@ Sayfa yenilendiğinde seçili dosyalar ve üretilen blob adresleri kaybolur.
 - Büyük görsellerde tarayıcı belleği sınırlayıcı olabilir; araç bunu piksel sınırıyla
   engellemeye çalışır ama tarayıcı başına bellek davranışı farklıdır.
 
-## Lisans
-
-- Bu proje için **henüz bir lisans seçilmemiştir**; bu depoda `LICENSE` dosyası yoktur.
-  Yayına almadan önce sahibinin bir lisans seçip eklemesi gerekir (ör. MIT, Apache-2.0).
-  Bu README bir lisans vaadi değildir.
-- Üçüncü taraf kod, kütüphane, font veya görsel yoktur. Dosya kendi CSS/JS'ini taşır.
-
 ## Test edilenler
 
 2026-10-28, Edge/Chromium 156 (headless) ve PHP 8.3.36 ile:
@@ -123,13 +110,3 @@ Sayfa yenilendiğinde seçili dosyalar ve üretilen blob adresleri kaybolur.
 - AVIF, HEIC, TIFF ve GIF kaynak olarak **desteklenmez**; bu biçimler reddedilir.
 - Renk profili dönüşümü yapılmaz; yeniden kodlama ICC profilini kaldırır.
 - `file://` üzerinden bazı tarayıcılar `createImageBitmap` davranışını kısıtlayabilir.
-
-## Ayrı GitHub deposu olarak yayınlama
-
-1. Bu klasörü yeni depoya kopyalayın (`imgtoolkit.php`, `README.md`).
-2. Tarayıcı aracı olduğu için GitHub Pages uygundur. Pages bilinmeyen uzantıları
-   indirme olarak sunabildiğinden dosyayı **`index.html`** olarak yeniden adlandırın;
-   içerik değişmez, işlevsellik etkilenmez.
-3. Ayarlar → Pages → "Deploy from a branch" ile `main` / `root` seçin.
-4. Yayın sonrası gerçek bir görselle dönüştürme, indirme ve mobil görünümü doğrulayın.
-5. Depoya lisans seçtikten sonra `LICENSE` ekleyin; ekran görüntüsünü gerçek tarayıcıdan alın.
